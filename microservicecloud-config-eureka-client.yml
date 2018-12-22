@@ -22,6 +22,12 @@ eureka:
     service-url:
       #defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/       #单机  设置与Eureka Server交互的地址查询服务和注册服务都需要依赖这个地址（单机）。
       defaultZone: http://eureka7001.com:7001/eureka/
+    
+info:
+  app.name: atguigu-microservicecloud
+  company.name: www.atguigu.com
+  build.artifactId: $project.artifactId$
+  build.version: $project.version$
       
 ---
 server:
@@ -41,5 +47,11 @@ eureka:
     service-url:
       #defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/       #单机  设置与Eureka Server交互的地址查询服务和注册服务都需要依赖这个地址（单机）。
       defaultZone: http://eureka7001.com:7001/eureka/
+      
+info:
+  app.name: atguigu-microservicecloud
+  company.name: www.atguigu.com
+  build.artifactId: $project.artifactId$
+  build.version: $project.version$
 
 
